@@ -60,7 +60,6 @@ VALUES('Shallows'), ('Coral Reef'), ('Tide Pools'), ('Deeps');
 
 INSERT INTO Taggings(animal_id, researcher_id)
 VALUES (1, 5), (1, 4), (2, 3), (3, 1), (4, 2), (5, 4), (6, 4), (7, 2);
--- VALUES(1, 5 AND 4), (1, 3), (2, 1), (3, 2), (4 AND 5, 4), (7, 2);
---
--- INSERT INTO Sightings(researcher_id, species_id, habitat_id)
--- VALUES(4, 4, 4), (1, 3, 4), (3, 5, 3), (5, 2, 2), (2, 1, 1), (5, 2, 1);
+
+INSERT INTO Sightings(researcher_id, species_id, habitat_id)
+VALUES(4, 4, 4), (1, 3, 4), (3, 5, 3), (5, 2, 2), (2, 1, 1), (5, 2, 1);

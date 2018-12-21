@@ -4,13 +4,13 @@ const router = express.Router();
 const {
   getAllTaggings,
   getSingleTagging,
-  allTaggingsResearcher
+  allTaggingsResearcher,
+  allTaggingsAnimal
 } = require("../db/queries/taggings.js");
 
 router.get("/", getAllTaggings);
 router.get("/:id", getSingleTagging);
-router.get("/taggings/researchers/:id", allTaggingsResearcher);
-// router.patch("/:id", updateAnimal);
-// router.delete("/:id", deleteAnimal);
+router.get("/researchers/:id", allTaggingsResearcher);
+router.get("/animals/:id", allTaggingsAnimal);
 
 module.exports = router;
